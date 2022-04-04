@@ -68,7 +68,7 @@ int main()
     int line_count[MAX_ELEMENT];
     // return 0;
 
-    FILE *fp = fopen("vanban.txt", "r"),
+    FILE *fp = fopen("alice30.txt", "r"),
          *fp2 = fopen("stopw.txt", "r");
     while (fscanf(fp2, "%s", stop_word[n_stop_word]) == 1)
         n_stop_word++;
