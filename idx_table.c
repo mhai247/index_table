@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define MAX_ELEMENT 3000
+#define MAX_ELEMENT 2650
 
 typedef struct word_struct
 {
@@ -57,14 +57,14 @@ int stp_w(char *word, char stopword[MAX_ELEMENT][50], int n_stop_word)
 
 int main()
 {
-    char word[50], c, line[1000], *ptr;
+    char word[50], c, line[500], *ptr;
     word_struct words[MAX_ELEMENT];
     int n_word = 0;
-    char stop_word[MAX_ELEMENT][50];
+    char stop_word[100][50];
     int line_idx = 1, punct = 1;
     int i = 0, n_stop_word = 0, j, m;
     int word_count[MAX_ELEMENT];
-    int pos[MAX_ELEMENT][600];
+    int pos[MAX_ELEMENT][740];
     int line_count[MAX_ELEMENT];
     // return 0;
 
