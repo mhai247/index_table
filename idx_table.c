@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define MAX_ELEMENT 10000
+#define MAX_ELEMENT 3000
 
 typedef struct word_struct
 {
@@ -64,7 +64,7 @@ int main()
     int line_idx = 1, punct = 1;
     int i = 0, n_stop_word = 0, j, m;
     int word_count[MAX_ELEMENT];
-    int pos[MAX_ELEMENT][100];
+    int pos[MAX_ELEMENT][600];
     int line_count[MAX_ELEMENT];
     // return 0;
 
@@ -133,5 +133,6 @@ int main()
             printf(",%d", pos[i][m]);
         printf("\n");
     }
+    // printf("%d\n", n_word);
     return 0;
 }
